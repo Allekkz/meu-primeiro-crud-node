@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de usuários</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="icon" href="Icon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <h2 id="titulo">Cadastro de usuários</h2>
+    <div id="divInputsButton">
+        <div id="divInputs">
+            <div id="input" class="input">
+                <input type="text" id="nomeInput" autocomplete="off" placeholder="Nome">
+            </div>
+            <div id="input" class="input">
+                <input type="password" id="senhaInput" placeholder="Senha">
+            </div>
+        </div>
+        <button id="botaoCadastro" onclick="cadastrar()"><span class="material-symbols-outlined">
+person_add
+</span></button>
+    </div>
+    <div id="usuarios">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Editar</th>
+                    <th>Deletar</th>
+                </tr>
+            </thead>
+            <tbody id="tabelaUsuarios">
+                <!-- Usuários aqui -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
